@@ -17,7 +17,7 @@ export default function App() {
         try {
             const results = await getMovies(query);
             if (results.length === 0) {
-                toast.error("Please enter your search query.");
+                toast.error('No movies found for your request.');
             }
             setMovies(results);
         } catch {

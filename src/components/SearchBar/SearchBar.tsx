@@ -11,7 +11,7 @@ export default function SearchBar({onSubmit}: SearchBarProps) {
         const query = (formData.get("query") ?? "").toString().trim();
         
         if (query === "") {
-            toast.error('No movies found for your request.');
+            toast.error('Please enter your search query.');
             return;
         }
         onSubmit(query);
